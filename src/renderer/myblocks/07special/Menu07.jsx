@@ -1,8 +1,7 @@
+import { memo } from "react";
 import PlayGround, { Block, Value, Field, Shadow, Category } from '../../components/PlayGround';
-
-export default function Menu07() {
-  return (
-    <Category name="特殊">
+export default memo(function Menu07() {
+  return <Category name="特殊">
       <Block type="b_special_autotime">
       </Block>
       <Block type="b_special_breakpoint">
@@ -23,6 +22,5 @@ export default function Menu07() {
       </Block>
       <Block type="b_special_wait">
       </Block>
-    </Category>
-  )
-}
+    </Category>;
+});
