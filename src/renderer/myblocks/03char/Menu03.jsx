@@ -1,9 +1,8 @@
-import React from 'react'
+import { memo } from "react";
+import React from 'react';
 import PlayGround, { Block, Value, Field, Shadow, Category } from '../../components/PlayGround';
-
-export default function Menu03() {
-  return (
-    <Category name="人物">
+export default memo(function Menu03() {
+  return <Category name="人物">
       <Block type="b_char_display">
         <Value name="val1"><Shadow type="text" /></Value>
       </Block>
@@ -34,6 +33,5 @@ export default function Menu03() {
       <Block type="b_char_scale">
         <Value name="val1"><Shadow type="text" /></Value>
       </Block>
-    </Category>
-  )
-}
+    </Category>;
+});
